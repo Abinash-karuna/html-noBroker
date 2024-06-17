@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color:maroon;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif        }
+    
+    button img {
+        max-height: 80%;
+        max-width: 80%;
+    }
+    .full{
+       
+    }
+    .browse{
+        height:100px;
+        width:100px;
+    }
+        </style>
+</head>
+<body>
+    <h1>Here you can Upload the Details</h1>
+    <div class="full">
+        <button class="btn">Choose an image</button>
+        
+            <input type="file" id="fileInput" accept="image/*">
+    
+        </div> 
+
+
+<img id="preview" class="preview" src="" alt="Image preview">
+
+<script>
+
+ document.getElementById('#fileInput').addEventListener('change',function(){
+        const file=event.target.files[0]
+        if(file){
+            const read=new FileReader();
+            reader.onload = function(e) {
+                document.getElementById('preview').src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+        }
+    })
+
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:lightgreen;
+        }
+        h2{
+            text-align: center;
+            color:indigo;
+        }
+        .but {
+            display:flex ;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            gap:10px;
+            
+            
+            
+        }
+        .but>*{
+            height: 100px;
+            width:200px;
+            background-color: antiquewhite;
+            font-size: 20px;
+            border-radius: 20px;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Hello Abinash<br>
+    AGRI-GO Welcomes You!!!</h2>
+    <div class="but">
+    <button class="buy">BUYERS</button>
+    <button class="sell">SELLERS</button>
+</div>
+<script>
+    var dec=document.querySelector('.buy');
+    dec.addEventListener('click',function(){
+        event.preventDefault();
+           
+        
+        window.location.href = 'buyers.html';
+
+    })
+    var de=document.querySelector('.sell');
+    de.addEventListener('click',function(){
+        event.preventDefault();
+           
+        
+        window.location.href = 'sellers.html';
+
+    })
+</script>   
+</body>
+</html>

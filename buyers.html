@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .head {
+            background-color: antiquewhite;
+            color:green
+        }
+        .contact{
+            display: flex;
+            gap:10px;
+            justify-content: center;
+            
+        }
+        .contact>button{
+            
+            height:50px;
+            width:120px;
+            background-color: burlywood;
+            margin-top: 100px;
+            border-radius: 10px;
+            
+            align-items: center;
+            font-size: larger;
+            cursor:pointer;
+        }
+        p{
+            justify-content: center;
+            align-items: center;
+        }
+        Famer1>*{
+           text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+    <h1>Hi Abinash!!!</h1>
+    <h2>AGRI-Go is there to Satisfy Your Needs!!!!</h2>
+</div>
+<div class="Famer1">
+    <h2> FAMER 1(Fresh Vegetables)</h2>
+    <div class="contact">
+    <img src="./images/fresh.png" height="300px" width="400px">
+    <button class="contact">CONTACT ME</button>
+</div>
+    </div>
+   
+    
+</div>
+<script>
+    var ide=document.querySelector(".contact");
+    ide.addEventListener('click',function(){
+        event.preventDefault();
+        window.location.href='contact.html';
+    })
+</script>
+</body>
+</html>

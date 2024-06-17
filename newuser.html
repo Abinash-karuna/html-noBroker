@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+h1{
+    text-align: center;
+}
+
+
+
+
+.al {
+    display: flex;
+    
+   justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: aqua;
+    
+    
+}
+
+
+button{
+    height: 25px;
+    width: 75px;
+    background-color:greenyellow;
+    border-radius: 30px;
+}
+#loginform>.name{
+    height: 50px;
+    width: 200px;
+}
+
+
+
+    </style>
+</head>
+<body>
+   <h1>New User</h1>
+   
+    <div class="al">
+
+    <form id="loginform">
+        
+        
+        <input class="name"type="name"placeholder="Name"required><br>
+      <br>
+        <input class="name" type="email"placeholder="Email Id"required><br><br>
+        
+        
+        <input class="name" type="password"placeholder="Password"required><br><br>
+        <button type="submit">signup</button>
+        
+        
+
+</div>
+    <script>
+        document.getElementById('loginform').addEventListener('submit', function(event) {
+            event.preventDefault();
+           
+                alert("successfully created");
+                window.location.href = 'enter.html';
+            
+            // Perform form validation or other actions here
+
+            // Redirect to index.html
+           
+        });
+    </script>
+</body>
+</html>

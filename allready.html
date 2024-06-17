@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .al {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            width: 400px;
+            background-color: aqua;
+            margin-left: 600px;
+            margin-top: 100px; /* Full height of the viewport */
+        }
+        #exist .name {
+            
+            font-size: x-large;
+           
+        }
+        .al button{
+            height: 25px;
+            display: flex;
+            margin-left: 100px;
+            align-items: center;
+            width:75px;
+            background-color: greenyellow;
+            border-radius: 30px;
+            
+            justify-content: center;
+            
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="al">
+        <form id="exist">
+            
+            <input class="name" id="hello" placeholder="Email Id" required><br>
+            <br>
+           
+            <input class="name" id="hi" placeholder="Password"><br><br>
+            <button class="signin">SignIn</button>
+        </form>
+    </div>
+    <script>
+        
+       
+        document.getElementById('exist').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var email=document.getElementById('hello').value 
+            var stemail='abi@gmail.com';
+            var Password=document.getElementById('hi').value
+            var stpass='abinash09'
+            if(email===stemail && stpass===Password){
+                
+                window.location.href = 'enter.html';
+            }
+            else{
+                alert("you have entered wrong mail/ password")
+            }
+           
+                
+                
+        
+
+        // Add a click event listener to the button
+        });
+    </script>
+</body>
+</html>
